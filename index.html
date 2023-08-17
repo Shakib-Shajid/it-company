@@ -10,13 +10,104 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="max-w-7xl mx-auto">
     <header>
+        <section>
+            <nav>
+                <div class="navbar bg-green-600 text-white">
+                    <div class="navbar-start">
+                        <!-- responsive part start -->
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li>
+                                    <a>About</a>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a>Resource</a></li>
+                            </ul>
+                        </div>
+                        <!-- responsive part end-->
+                        <a class="btn btn-ghost normal-case text-xl">BitBinary IT</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li tabindex="0">
+                                <details>
+                                    <summary>About</summary>
+                                    <ul class="p-2">
+                                        <li><a>Submenu 1</a></li>
+                                        <li><a>Submenu 2</a></li>
+                                    </ul>
+                                </details>
+                            </li>
+                            <li><a>Resource</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="btn">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </section>
 
+        <section>
+            <div class="hero lg:max-h-screen bg-base-200 text-white "
+                style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                <div class="hero-overlay bg-opacity-60 "></div>
+                <div class=" hero-content flex-col gap-4 lg:flex-row lg:my-20 my-4">
+                    <div>
+                        <h1 class="text-5xl font-bold">Box Office News!</h1>
+                        <h3 class="my-3 text-3xl font-medium">Satisfy Our Clients</h3>
+                        <p class="my-3">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                            excepturi</p>
+                        <button class="btn bg-green-600 border-0">Get Started</button>
+                    </div>
+                    <img src="images/a.jpg" class="lg:max-w-sm rounded-lg shadow-2xl" />
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
+        <section>
+            <div class="flex lg:flex-row gap-10 flex-col max-xl:">
+                <div>
+                    <h2>Bridgeline Profile</h2>
+                    <p>Bridgeline powers digital experiences for some of the world’s largest brands. Our innovative
+                        solutions enable companies to capture greater traffic, increase order value and drive
+                        conversion.​​</p>
+                    <p>Our suite of digital experience solutions provide feature-rich eCommerce and content management
+                        capabilities, turn-key site search and merchandising, SEO optimization tools and more – all
+                        designed to keep your revenue climbing. Our solutions have boosted millions of sales across
+                        hundreds of countries globally.​
 
+                    </p>
+                </div>
+                <div>
+                    <div>
+                        <h3>2,500+</h3>
+                        <p>Clients</p>
+                    </div>
+                    <div>
+                        <h3>100+</h3>
+                        <p>Countries</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
